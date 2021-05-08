@@ -11,5 +11,12 @@
       <label for="proveedor-id">Id Proveedor: </label>
       <input id="proveedor-id" [(ngModel)]="proveedor.id" placeholder="id">
     </div>   
+
+
+ <!-- Agregación de boton para la actualización del nombre del Proveedor o Clientes-->
+    <button class="add-button" (click)="update(proveedorName.value); proveedorName.value='' " >
+      Actualice el proveedor
+    </button>
+
 </div>
 

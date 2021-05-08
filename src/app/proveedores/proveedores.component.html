@@ -30,13 +30,15 @@
               </mat-card>
               <mat-paginator [length]="resultsLength" [pageSize]="3" [pageSizeOptions]="[3, 5, 10]"></mat-paginator>
             </div> 
+          
         </div>
   
         <div flex>
               <app-proveedor-detalle [proveedor]="selectedProveedor"></app-proveedor-detalle>
         </div> 
+
     </mat-card>
-           
+
     <div layout="column">
               <h2>Agregar Proveedor</h2>
                 <div>
@@ -46,6 +48,7 @@
                       <input matInput for="new-proveedor" #proveedorName>
                     </mat-form-field>
                   </mat-card>
+
                   <mat-card>
                     <mat-form-field appearance="fill">
                       <mat-label>Id:</mat-label>
